@@ -16,7 +16,7 @@ else if (number1 > number2)
     Console.WriteLine($"Большее число:{max}");
     Console.WriteLine($"Меньшее число:{min}");
 }
-else if (number1 < number2)
+else // if (number1 < number2)
 {
    
     Console.WriteLine($"Большее число:{min}");
