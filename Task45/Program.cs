@@ -10,12 +10,15 @@ int UserInput(string str)
     return num;
 }
 
-void mas(int m)
+int[] CreateArray(int size, int min, int max)
 {
-for (int i = 0; i < m; i++)
-{
-Console.WriteLine($»Введите {i+1} элемент массива «);
-Array[i] = Convert.ToInt32(Console.ReadLine());
+    int[] arr = new int[size];
+    Random rnd = new ();
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = rnd.Next(min, max);
+    }
+    return arr;
 }
 
 void PrintOut(int[] arr)
